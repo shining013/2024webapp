@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+:root{
+
+    --primary-color-0: #aaa;
+    --primary-color-1: pink;
+    --primary-color-2: #efefef;
+    --text-shadow-1:0 10px 10px rgba(0,0,0,0.3);
+    --shadow-1:rgba(0,0,0,0.3);
+}
+
+.testWrap{
+    background-color: var(--primary-color-1);
+    box-shadow: 0 10px 10px var(--shadow-1);
+}
+
+.visualWrap{
+    background: url(../images/slider-bg.svg) no-repeat center;
+    background-size: cover;
+}
+
+.shadow{
+    box-shadow:0 0 10px var(--shadow-1) !important;
+}
+
+.btnShadow{
+    box-shadow: 0 10px 10px var(--shadow-1) !important;
+}
+
+
+.conTitle{
+    position: relative;
+    display:inline-block;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.conTitle:after{
+    content:"";
+    display: block;
+/* 
+    width:30px;
+    height: 1px;
+    background-color: var(--primary-color-0);
+    margin: 10px auto */
+    width:10px;
+    height: 10px;
+    background-color: #fff;
+    background-color: var(--primary-color-0);
+    border-radius: 50%;
+    position: absolute;
+    left:-15px;
+    top:-5px;
+}
+
+.service .card {
+    background-color: var(--primary-color-2);
+    border:0 none; /* 테두리 없앰 */
+    transition: 0.3s;
+    cursor:pointer;
+}
+
+.service .card:hover{
+    transform: scale(1.1) translate(-20px, -20px);
+    box-shadow: 15px 15px 15px var(--shadow-1)
+}
+
+.service .card img {
+    height: 200px;
+}
+
+/*customer*/
+.customer .item{
+   background-color: skyblue;
+}
